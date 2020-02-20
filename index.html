@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Login </title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script>
+		//verificando campos
+		function login(){
+			var user = document.getElementById("email").value;
+			var pass = document.getElementById("senha").value;
+			var recarregar = document.getElementById('login').innerHTML = '<a href="index.html" id="login"><div class="link0"><center>Logar</div></a>';
+			
+			if(user=="" || pass==""){
+				alert("Email ou Senha Inválidos");
+				return recarregar;
+			}
+			else{
+				return logar();
+			}
+		}
+	    //faz a checagem no checkbox
+		function checar() {
+			var checkBox = document.getElementById("personalt");
+			var text = document.getElementById("text");
+
+			if (checkBox.checked == true){
+				text.style.display = "block";
+			} else {
+			text.style.display = "none";
+			}
+		}
+		
+		//verifica se a checkbox esta ativada e redireciona para a pagina indicada
+		function logar(){
+			var checkBox = document.getElementById("personalt");
+			if(checkBox.checked == true){
+				return document.getElementById('logar').innerHTML = '<a href="principalPT.html" id="login"><div class="link0"><center>Logar</div></a>';
+			}
+			if(checkBox.checked == false){
+				return document.getElementById('logar').innerHTML = '<a href="PrincipalCliente.html" id="login"><div class="link0"><center>Logar</div></a>';
+			}
+		}
+	</script>
+	<style>
+	body{background-color: #fff;}
+	hr{border: 1px solid #000;}
+	</style>
+</head>
+
+<body> 
+	<div class="formulario">
+		<center><h2> Já tem conta? Continue conosco! </h2>
+			<hr>
+            <h3>Email: </h3>
+            <input type="text" id="email" placeholder="  ex: exemplo@email.com" size="50"></input><br/></br>
+            <h3>Senha: </h3>
+            <input type="password" id="senha" placeholder="  ********" size="50"></input><br/><br/>
+			<h4>É Personal Trainer?<input type="checkbox" id="personalt" onclick="checar()"></input></h4>
+			<p id="text" style="display:none">Ative somente se tiver uma conta de Colaborador!</p>
+			<br>
+			<a onclick="login()" id="login"><div class="link0"><center>Logar</div></a> ou 
+			<a href="cadastroCliente.html"><div class="link1">Cadastre-se</div></a></center><br>
+	</div>
+	
+	<header>
+		<center><img src="img/logo.png" height="110px" width="110px"></center>
+		<input type="checkbox" id="check">
+		<label id="icone" for="check"><img src="img/icone.png" width="40px" height="40px" alt="icone"></label>
+		<div class="barra">
+			<a href="index.html"><div class="link2"><img src="img/fechar.png" height="30px" width="30px"></img></div></a>
+			<center>
+			<nav>
+				<h2> Quer trabalhar conosco? <br>
+				Clique no botão abaixo e preencha as informações: </h2>
+				<br>
+				<a href="cadastroPT.html"><div class="link">Trabalhe Conosco</div></a>
+			</nav>
+			</center>
+		</div>
+	</header>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Cadastro </title>
+	<script src="js/validarCamposCliente.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/cadastroCliente.css">
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/init.js"></script>
+	<script src="js/firebasePT.js"></script>
+	<style>
+	body{background-color: #fff;}
+	label{margin-left: 10px;}
+	hr{border: 1px solid #000;}
+	</style>
+</head>
+<body> 
+	<div class="formulario">
+		<center><h2> Ainda não tem conta? Entre para o time! </h2></center>
+		<hr>
+			<br>
+			<label>Nome: </label>
+			<input type="text" id="nome" placeholder="  ex: carlos" size="20"> *
+			<label>Sobrenome: </label>
+			<input type="text" id="sobrenome" placeholder="  ex: marques" size="23"> *<br/><br/>
+			<label>Data de Nascimento: </label>
+			<input type="long" id="datanasc" placeholder="  ex: dd/mm/aaaa" size="10"> *<br/><br/>
+			<label>CEP: </label>
+			<input type="long" id="cep" placeholder="  ex: 12345-789" size="15"> *<br/><br/>
+			<label>Rua: </label>
+			<input type="text" id="rua" placeholder="  ex: Rua dos bobos" size="50"> *
+			<label>N°: </label>
+			<input type="long" id="numero" placeholder="  ex: 000" size="3"> *<br/><br/>
+			<label>Bairro: </label>
+			<input type="text" id="bairro" placeholder="  ex: Itaquera" size="44"> *
+			<label>Compl: </label>
+			<input type="long" id="complemento" placeholder="  ex: A5" size="3"><br/><br/>
+			<label>Cidade: </label>
+			<input type="text" id="cidade" placeholder="  ex: São Paulo" size="28"> *
+			<label>Estado: </label>
+			<input type="text" id="estado" placeholder="  ex: São Paulo" size="18"> *<br/><br/>
+            <label>Telefone: </label>
+			<input type="long" id="phone" placeholder="  ex: (11)1234-5678" size="17">
+			<label>Celular: </label>
+			<input type="long" id="celular" placeholder="  ex: (11)91234-5678" size="23"><br/><br/>
+			<label>Email: </label>
+            <input type="text" id="email" placeholder="  ex: exemplo@email.com" size="60"> *</input><br/><br/>
+            <label>Senha: </label>
+            <input type="password" id="senha" placeholder="  ********" size="30"> *</input><br/><br/>
+			<label>Confirme sua senha: </label>
+            <input type="password" id="confsenha" placeholder="  ********" size="30"> *</input><br/><br/><br>
+			<center><a onclick="validarCampos()" id="cadastro"><div class="link0"><center>Cadastrar</div></a> ou 
+			<a href="index.html"><div class="link1">Logue-se</div></a></center><br>
+	</div>
+	
+	<header>
+		<center><img src="img/logo.png" height="110px" width="110px"></center>
+		<input type="checkbox" id="check">
+		<label id="icone" for="check"><img src="img/icone.png" width="40px" height="40px" alt="icone"></label>
+		<div class="barra">
+			<a href="cadastroCliente.html"><div class="link2"><img src="img/fechar.png" height="30px" width="30px"></img></div></a>
+			<center>
+			<nav>
+				<h2> Quer trabalhar conosco? <br>
+				Clique no botão abaixo e preencha as informações: </h2>
+				<br><br>
+				<a href="cadastroPT.html"><div class="link">Trabalhe Conosco</div></a>
+			</nav>
+			</center>
+		</div>
+	</header>
+</body>
+</html>

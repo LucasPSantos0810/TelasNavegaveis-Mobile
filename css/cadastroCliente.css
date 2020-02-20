@@ -1,0 +1,181 @@
+a{
+	text-decoration: none;
+}
+
+.formulario{
+	position: relative;
+	height: 100%;
+	width: 90%;
+	top: 150px;
+	left: 5%;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	background-color: #f0f0f0;
+	margin-bottom: 20px;
+}
+
+input#nome,#sobrenome,#phone,#celular{
+	height: 20px;
+	width: 40%;
+	border: 1px solid #000;
+	border-radius: 30px;
+}
+
+input#datanasc,#cep,#senha,#confsenha{
+	height: 20px;
+	width: 20%;
+	border: 1px solid #000;
+	border-radius: 30px;
+}
+
+input#rua,#email{
+	height: 20px;
+	width: 75%;
+	border: 1px solid #000;
+	border-radius: 30px;
+}
+
+input#numero,#complemento{
+	height: 20px;
+	width: 10%;
+	border: 1px solid #000;
+	border-radius: 30px;
+}
+
+input#bairro{
+	height: 20px;
+	width: 60%;
+	border: 1px solid #000;
+	border-radius: 30px;
+}
+
+input#cidade{
+	height: 20px;
+	width: 50%;
+	border: 1px solid #000;
+	border-radius: 30px;
+}
+
+input#estado{
+	height: 20px;
+	width: 35%;
+	border: 1px solid #000;
+	border-radius: 30px;
+}
+
+header{
+	position: fixed;
+	height: 110px;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: #53f63d;
+	color: #fff;
+	border-bottom: 2px solid #000;
+}
+
+#check{
+	display: none;
+}			
+
+#icone{
+	cursor: pointer;
+	padding: 15px;
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	top: 5px;
+	left: 5px;
+	z-index: 1;
+}
+
+.barra{
+	background-color: #53f63d;
+	height: 300px;
+	width: 800px;
+	position: absolute;
+	top: 150px;
+	transition: all .2s linear;
+	left: -10000px;
+	z-index: 1;
+	border: 2px solid #000;
+	border-radius: 10px;
+
+}
+
+nav{
+	width: 100%;
+	position: fixed; 
+	top: 50px;
+	color: #000;
+}
+
+.link{
+	background-color: #fff;
+	padding: 20px;
+	width: 120px;
+	height: 20px;
+	font: 'Arial';
+	font-size: 12pt;
+	transition: all .2s linear;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 20px;
+	opacity: 0;
+	margin-top: 200px;
+
+}
+
+.link:hover{
+	background-color: #53f63d;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 20px;
+}
+
+.link0{
+	background-color: #53f63d;
+	width: 120px;
+	height: 20px;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 20px;
+}
+
+.link0:hover{
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #53f63d;
+	border-radius: 20px;
+}
+
+.link1{
+	background-color: #53f63d;
+	width: 120px;
+	height: 20px;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 20px;
+}
+
+.link1:hover{
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #53f63d;
+	border-radius: 20px;
+}
+
+.link2{
+	position: absolute;
+	top: 10px;
+	left: 95%;
+}
+
+#check:checked ~ .barra{
+	transform: translateX(10200px);
+}
+
+#check:checked ~ .barra nav a .link{
+	opacity: 1;
+	margin-top: 0;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Trabalhe Conosco </title>
+	<script src="js/validarCamposClientePT.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/cadastroClienteparaPT.css">
+	<style>
+	body{background-color: #fff;}
+	label{margin-left: 10px;}
+	hr{border: 1px solid #000;}
+	</style>
+</head>
+
+<body> 
+	<div class="formulario">
+		<center><h2> Ainda não tem conta? Trabalhe Conosco! </h2></center>
+		<hr>
+			<br>
+			<label>Nome: </label>
+			<input type="text" id="nome" placeholder="  ex: carlos" size="20"> *
+			<label>Sobrenome: </label>
+			<input type="text" id="sobrenome" placeholder="  ex: marques" size="23"> *<br/><br/>
+			<label>Data de Nascimento: </label>
+			<input type="long" id="datanasc" placeholder="  ex: dd/mm/aaaa" size="10"> *<br/><br/>
+			<label>RG: </label>
+			<input type="long" id="rg" placeholder="  ex: 12.345.678/9" size="17"> *
+			<label>CPF: </label>
+			<input type="long" id="cpf" placeholder="  ex: 123456789-01" size="23"> *<br/><br/>
+			<label>CNPJ: </label>
+			<input type="long" id="cnpj" placeholder="  ex: 12.345.678/9012-34" size="30"> *<br/><br/>
+			<label>CEP: </label>
+			<input type="long" id="cep" placeholder="  ex: 12345-789" size="15"> *<br/><br/>
+			<label>Rua: </label>
+			<input type="text" id="rua" placeholder="  ex: Rua dos bobos" size="50"> *
+			<label>N°: </label>
+			<input type="long" id="numero" placeholder="  ex: 000" size="3"> *<br/><br/>
+			<label>Bairro: </label>
+			<input type="text" id="bairro" placeholder="  ex: Itaquera" size="44"> *
+			<label>Compl: </label>
+			<input type="long" id="complemento" placeholder="  ex: A5" size="3"><br/><br/>
+			<label>Cidade: </label>
+			<input type="text" id="cidade" placeholder="  ex: São Paulo" size="28"> *
+			<label>Estado: </label>
+			<input type="text" id="estado" placeholder="  ex: São Paulo" size="18"> *<br/><br/>
+            <label>Telefone: </label>
+			<input type="long" id="phone" placeholder="  ex: (11)1234-5678" size="17">
+			<label>Celular: </label>
+			<input type="long" id="celular" placeholder="  ex: (11)91234-5678" size="23"><br/><br/>
+			<label>Email: </label>
+            <input type="text" id="email" placeholder="  ex: exemplo@email.com" size="60"> *</input><br/><br/>
+            <label>Senha: </label>
+            <input type="password" id="senha" placeholder="  ********" size="30"> *</input><br/><br/>
+			<label>Confirme sua senha: </label>
+            <input type="password" id="confsenha" placeholder="  ********" size="30"> *</input><br/><br/><br/>
+			<hr>
+			<center><h3> Para confirmarmos que você é um profissional autenticado, precisamos<br>
+			de uma foto do seu certificado. Por favor, insira a imagem abaixo: </h3>
+			<br>
+			<input type="file" name="arquivos" class="certificado"  accept="image/png, image/jpeg"/></input><br>
+			<br><br>
+			<button type="button" name="enviar" id="enviar" onclick="">Enviar</button><br><br>
+			<hr>
+			<br>
+			<a onclick="validarCamposClientePT()" id="cadastro"><div class="link0"><center>Cadastrar</div></a>
+			</center>
+	</div>
+	
+	<header>
+		<center><img src="img/logo.png" height="85px" width="85px">
+		<a href="PrincipalCliente.html"><div class="voltar"><img src="img/voltar.png" height="40px" width="40px"></img></div></a>
+		<div class="colaborador">
+			<br><b>COLABORADOR<b>
+			</center>
+		</div>
+	</header>
+</body>
+</html>
